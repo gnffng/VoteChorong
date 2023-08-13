@@ -1,0 +1,5 @@
+export default ActionType = {
+    INCREMENT : "INCREMENT",
+    DECREMENT : "DECREMENT",
+    CHANGE_BY_AMOUNT : "CHANGE_BY_AMOUNT"
+}

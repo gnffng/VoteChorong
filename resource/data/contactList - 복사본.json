@@ -1,0 +1,37 @@
+[
+    {
+        "id": 1,
+        "name": "고길동",
+        "compName": "Enssel",
+        "departName": "IT사업부",
+        "phoneNumber": "010-1234-5678"
+    },
+    {
+        "id": 2,
+        "name": "김둘리",
+        "compName": "Enssel",
+        "departName": "IT사업부",
+        "phoneNumber": "010-1234-5678"
+    },
+    {
+        "id": 3,
+        "name": "마이콜",
+        "compName": "Enssel",
+        "departName": "IT사업부",
+        "phoneNumber": "010-1234-5678"
+    },
+    {
+        "id": 4,
+        "name": "이또치",
+        "compName": "Enssel",
+        "departName": "IT사업부",
+        "phoneNumber": "010-1234-5678"
+    },
+    {
+        "id": 5,
+        "name": "이춘향",
+        "compName": "Enssel",
+        "departName": "IT사업부",
+        "phoneNumber": "010-1234-5678"
+    }
+]

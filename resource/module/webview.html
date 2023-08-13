@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script src="./opencv.js"></script>
+        <script>
+            var canvas;
+            var ctx;
+            var image = new Image();
+            image.onload = function () {
+                ctx.drawImage(image, 0, 0);
+                window.ReactNativeWebView.postMessage(JSON.stringify({type: "onImageLoad", data: ""}));
+            };
+
+            function onload() {
+                canvas = document.getElementById("c");
+                ctx = canvas.getContext("2d");
+                window.ReactNativeWebView.postMessage(JSON.stringify({type: "onload", data: ""}));
+            }
+
+            function loadImage(base64, width, height) {
+                canvas.width = width;
+                canvas.height = height;
+                ctx.canvas.width = width;
+                ctx.canvas.height = height;
+                ctx.clearRect(0, 0, width, height);
+                image.src = "data:image/png;base64," + base64;
+            }
+
+            function crop(points, size) {
+                let src = cv.imread("c");
+                let dst = new cv.Mat();
+                let dsize = new cv.Size(size.cols, size.rows);
+                let srcTri = cv.matFromArray(4, 1, cv.CV_32FC2, points);
+                let dstTri = cv.matFromArray(4, 1, cv.CV_32FC2, [0, 0, size.cols - 1, 0, 0, size.rows - 1, size.cols - 1, size.rows - 1]);
+                let M = cv.getPerspectiveTransform(srcTri, dstTri);
+
+                cv.warpPerspective(src, dst, M, dsize, cv.INTER_LINEAR, cv.BORDER_CONSTANT, new cv.Scalar());
+                canvas.width = size.cols;
+                canvas.height = size.rows;
+                ctx.canvas.width = size.cols;
+                ctx.canvas.height = size.rows;
+                ctx.clearRect(0, 0, size.cols, size.rows);
+                cv.imshow("c", dst);
+                window.ReactNativeWebView.postMessage(JSON.stringify({
+                    type: "crop",
+                    data: canvas.toDataURL()
+                }));
+                src.delete();
+                dst.delete();
+                M.delete();
+                srcTri.delete();
+                dstTri.delete();
+            }
+        </script>
+    </head>
+    <body onload="onload()">
+        <canvas id="c"></canvas>
+    </body>
+<html>

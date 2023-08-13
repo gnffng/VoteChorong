@@ -1,0 +1,80 @@
+{
+    "idGenerator" : 6,
+    "arrData" : [
+        {
+            "id": 1,
+            "name": ["고길동","Go Gildong"],
+            "compName": ["Enssel", "inssel"],
+            "departName": ["IT사업부", "AI개발부"],
+            "phoneNumber": ["010-1234-5678", "010-1111-0000"],
+            "email" : ["test@enssel.com", "test@test.com"],
+            "landLinePhone" : ["031-123-45678", "031-111-0000"],
+            "fax" : ["031-234-5678", "031-222-1111"],
+            "etcNumber" : ["031-111-2222", "031-333-4444"],
+            "address" : ["경기도 성남시 분당구 성남대로 393 A205", "경기도 성남시 분당구 테스트대로 404-502"],
+            "homepage" : ["http://www.enssel.com/", "http://www.test.com"],
+            "memo" : ["동양인", "집주인"],
+            "date" : "2022-09-03/08:00:01"
+        },
+        {
+            "id": 2,
+            "name": ["김둘리", "Kim Dul-ri"],
+            "compName": ["Enssel", "inssel"],
+            "departName": ["IT사업부", "AI개발부"],
+            "phoneNumber": ["010-1234-5678", "010-1111-0000"],
+            "email" : ["test@enssel.com", "test@test.com"],
+            "landLinePhone" : ["031-123-45678", "031-111-0000"],
+            "fax" : ["031-234-5678", "031-222-1111"],
+            "etcNumber" : ["031-111-2222", "031-333-4444"],
+            "address" : ["경기도 성남시 분당구 성남대로 393 A205", "경기도 성남시 분당구 테스트대로 404-502"],
+            "homepage" : ["http://www.enssel.com/", "http://www.test.com"],
+            "memo" : ["공룡", "세입자"],
+            "date" : "2022-09-03/08:00:02"
+        },
+        {
+            "id": 3,
+            "name": ["마이콜", "Michole"],
+            "compName": ["Enssel", "inssel"],
+            "departName": ["IT사업부", "AI개발부"],
+            "phoneNumber": ["010-1234-5678", "010-1111-0000"],
+            "email" : ["test@enssel.com", "test@test.com"],
+            "landLinePhone" : ["031-123-45678", "031-111-0000"],
+            "fax" : ["031-234-5678", "031-222-1111"],
+            "etcNumber" : ["031-111-2222", "031-333-4444"],
+            "address" : ["경기도 성남시 분당구 성남대로 393 A205", "경기도 성남시 분당구 테스트대로 404-502"],
+            "homepage" : ["http://www.enssel.com/", "http://www.test.com"],
+            "memo" : ["흑인", "이웃"],
+            "date" : "2022-09-03/08:00:03"
+        },
+        {
+            "id": 4,
+            "name": ["이또치", "Yi Ddochi"],
+            "compName": ["Enssel", "inssel"],
+            "departName": ["IT사업부", "AI개발부"],
+            "phoneNumber": ["010-1234-5678", "010-1111-0000"],
+            "email" : ["test@enssel.com", "test@test.com"],
+            "landLinePhone" : ["031-123-45678", "031-111-0000"],
+            "fax" : ["031-234-5678", "031-222-1111"],
+            "etcNumber" : ["031-111-2222", "031-333-4444"],
+            "address" : ["경기도 성남시 분당구 성남대로 393 A205", "경기도 성남시 분당구 테스트대로 404-502"],
+            "homepage" : ["http://www.enssel.com/", "http://www.test.com"],
+            "memo" : ["타조", "세입자"],
+            "date" : "2022-09-03/08:00:04"
+        },
+        {
+            "id": 5,
+            "name": ["이춘향", "Yi Chunhyang"],
+            "compName": ["Enssel", "inssel"],
+            "departName": ["IT사업부", "AI개발부"],
+            "phoneNumber": ["010-1234-5678", "010-1111-0000"],
+            "email" : ["test@enssel.com", "test@test.com"],
+            "landLinePhone" : ["031-123-45678", "031-111-0000"],
+            "fax" : ["031-234-5678", "031-222-1111"],
+            "etcNumber" : ["031-111-2222", "031-333-4444"],
+            "address" : ["경기도 성남시 분당구 성남대로 393 A205", "경기도 성남시 분당구 테스트대로 404-502"],
+            "homepage" : ["http://www.enssel.com/", "http://www.test.com"],
+            "memo" : ["동양인", "외지인"],
+            "date" : "2022-09-03/08:00:05"
+        }
+    ]
+}
